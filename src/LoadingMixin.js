@@ -7,17 +7,17 @@ export default {
         this.$options.load = true;
         var data = {}
         
-        var loadingId = this.$options.loadingId
+        var loadingId = this.$data.loadingId
         if (loadingId) {
           data.id = loadingId
-          data.caption = this.$options.loadingCaption
-        }
+          data.caption = this.$data.loadingCaption
 
-        Bus.$emit('start_loading', data)
+          Bus.$emit('start_loading', data)
+        }
     },
     endLoading: function () {
         this.$options.load = false;
-        var loadingId = this.$options.loadingId
+        var loadingId = this.$data.loadingId
         Bus.$emit('end_loading', loadingId);
     },
     failLoading: function () {
