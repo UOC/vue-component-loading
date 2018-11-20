@@ -1,0 +1,28 @@
+{
+  "name": "vue-component-loading",
+  "version": "1.0.0",
+  "description": "Vuejs package, allow you to manage a loading state inside all component, and to display a status caption",
+  "main": "src/index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": {
+    "name": "Xavi Aracil",
+    "email": "xaracil@uoc.edu",
+    "url": "https://www.uoc.edu"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/uoc/vue-component-loading"
+  },
+  "keywords": [
+    "vue",
+    "vue-component-loading",
+    "vue loading"
+  ],
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/uoc/vue-component-loading/issues"
+  },
+  "homepage": "https://github.com/uoc/vue-component-loading#readme"
+}
