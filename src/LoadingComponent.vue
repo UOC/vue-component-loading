@@ -28,7 +28,7 @@ export default {
     }
   },
   methods: {
-    registerComponent (data) {
+    registerComponent: function (data) {
       this.isLoading = true;
       // data.id and data.caption (caption can be undefined)
       this.components.push(data)
@@ -37,7 +37,7 @@ export default {
       }
       this.nbComponents++
     },
-    componentEndLoading (id) {
+    componentEndLoading: function (id) {
       this.nbFinished++
       this.popComponent(id)
     },
@@ -45,10 +45,10 @@ export default {
       this.nbFailed++
       this.popComponent(id)
     },
-    setCurrentComponent () {
+    setCurrentComponent: function () {
       this.currentComponent = this.components.shift()
     },
-    popComponent (id) {
+    popComponent: function (id) {
       if (this.currentComponent !== null && this.currentComponent.id == id) {
         if (this.components.length > 0) {
           this.setCurrentComponent ()
@@ -75,7 +75,7 @@ export default {
       }
     }
   },
-  created(){
+  created () {
     Bus.$on('start_loading', this.registerComponent);
     Bus.$on('end_loading', this.componentEndLoading);
     Bus.$on('fail_loading', this.fail);

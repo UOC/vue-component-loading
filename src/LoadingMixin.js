@@ -3,7 +3,7 @@ import Vue from 'vue'
 
 export default {
   methods: {
-    startLoading(){
+    startLoading: function () {
         this.$options.load = true;
         var data = {}
         
@@ -15,19 +15,18 @@ export default {
 
         Bus.$emit('start_loading', data)
     },
-
-    endLoading(){
+    endLoading: function () {
         this.$options.load = false;
         var loadingId = this.$options.loadingId
         Bus.$emit('end_loading', loadingId);
     },
-    failLoading(){
+    failLoading: function () {
         this.$options.load = false;
         var loadingId = this.$options.loadingId
         Bus.$emit('fail_loading', loadingId);
     }
   },
-  beforeCreate(){
+  beforeCreate () {
     Vue.util.defineReactive(this.$options, 'load', false);
     if(!this.$options.computed){
         this.$options.computed = {}
