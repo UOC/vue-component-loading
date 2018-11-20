@@ -3,6 +3,7 @@
   "version": "1.0.0",
   "description": "Vuejs package, allow you to manage a loading state inside all component, and to display a status caption",
   "main": "src/index",
+  "typings": "src/index",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
   },
