@@ -33,7 +33,7 @@ export default {
       // data.id and data.caption (caption can be undefined)
       this.components.push(data)
       if (this.currentComponent == null) {
-        setCurrentComponent();
+        this.setCurrentComponent();
       }
       this.nbComponents++
     },
