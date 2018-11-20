@@ -24,5 +24,8 @@
   "bugs": {
     "url": "https://github.com/uoc/vue-component-loading/issues"
   },
-  "homepage": "https://github.com/uoc/vue-component-loading#readme"
+  "homepage": "https://github.com/uoc/vue-component-loading#readme",
+  "dependencies": {
+    "underscore": "^1.9.1"
+  }  
 }
