@@ -56,7 +56,7 @@ export default {
       } else {
         // remove from array of components
         if (this.components.length > 0) {
-          this.components = !_.without(this.components, _.findWhere(this.components, {id}))
+          this.components = _.without(this.components, _.findWhere(this.components, {id}))
         }
       }
     }
